@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AccountingSystem from './components/AccountingSystem';
+import Banner from './components/Banner';
+import Data from './components/Data';
+import Introduction from './components/Intro';
+import NavBar from './components/NavBar/NavBar';
+import RealTimeOverView from './components/RealTimeOverView';
+import SavingMoney from './components/SavingMoney';
+import TrustedCustomers from './components/TrustedCustomers';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner />
+      <NavBar />
+      <Introduction />
+      <TrustedCustomers />
+      <SavingMoney />
+      <AccountingSystem />
+      <RealTimeOverView />
+      <Data />
     </div>
   );
 }
